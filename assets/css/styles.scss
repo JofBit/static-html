@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
-body, html {
-    //display: flex;
-    height: 100%
+a{
+    text-decoration: none;
 }
 
 .center{
-    //background-color: white;
-    //width: 30%;
-    //align-content: center;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,10 +19,6 @@ body, html {
     color: aliceblue;
 }
 
-//.nav-links {
-//    display: flex;
-//}
-
 .separation{
     margin:auto;
     width:40%;
@@ -39,7 +30,7 @@ body, html {
     left: 20px;
     width: 5%;
     height: auto;
-    animation: rotation_logo infinite linear 2s;
+    animation: rotation_logo infinite linear 1s;
 }
 
 @keyframes rotation_logo {
@@ -53,7 +44,10 @@ body, html {
     justify-content: center;
 }
 
-body {font-family: "Raleway", sans-serif}
+
+body {
+    font-family: "Raleway", sans-serif
+}
 
 h1{
     color: #fff;
@@ -62,54 +56,43 @@ h1{
     font-family: 'Rock Salt', cursive;
 }
 
-
-//ul{
-//    display: flex;
-//    justify-content: center;
-//    //list-style: initial;
-//}
-
 .bgimg {
     background-image: url('../image/panorama.jpg');
-    min-height: 100%;
+    min-height: 50%;
+    height: 100%;
     background-position: center;
     background-size: cover;
 }
 
-//.mini-bottom-left{
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: flex-start;
-//    align-items: flex-end;
-//}
-
 #page {
-    min-height:100vh; /* 1 */
-    display:flex; /* 2 */
-    flex-direction:column; /* 3 */
-    align-items: stretch;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
 }
 
-//#footer{
-//    display: flex;
-//}
+#footer{
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    bottom: 5%;
+}
 
 .button-area {
     margin: 10px auto;
     display: flex;
-    //flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-width: 40%;
     max-width: 320px;
     a {
         background: grey;
         padding: 1em 2.4em;
-        font-size: .9em;
+        font-size: 1em;
         margin: 1em;
         color: white;
         text-decoration: none;
         flex-grow: 1;
-        //text-align: center;
     }
 }
 
@@ -118,10 +101,25 @@ h1{
 }
 
 .list {
+    font-size: 2em;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    //align-content: space-between;
     width: 80%;
+    a{
+        color: white;
+        font-family: "Raleway", sans-serif;
+    }
+
+}
+
+.content{
+    flex: 3;
+    min-font-size: 1em;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+li:hover{
+    background-color: darkslateblue;
 }
