@@ -3,7 +3,7 @@ var filesToCache = [
   '/',
   '/log.html',
   '/alpes.html',
-  '/assets/css/style.css',
+  '/assets/css/styles.css',
   '/assets/main.js'
 ];
 
