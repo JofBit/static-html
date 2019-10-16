@@ -25,17 +25,28 @@ a {
   left: 20px;
   width: 5%;
   height: auto;
-  animation: rotation_logo infinite linear 1s; }
+  animation: rotation_logo infinite linear 1500ms;
+  animation-direction: alternate; }
 
 @keyframes rotation_logo {
   from {
-    transform: rotate(0deg); }
+    transform: rotate(-90deg); }
   to {
-    transform: rotate(360deg); } }
+    transform: rotate(90deg); } }
+@keyframes zoom {
+  from {
+    font-size: 100%; }
+  to {
+    font-size: 125%; } }
 .list-items {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.list-items:hover {
+  animation: zoom linear;
+  animation-duration: 150ms;
+  animation-fill-mode: forwards; }
 
 body {
   font-family: "Raleway", sans-serif; }
@@ -87,7 +98,7 @@ h1 {
 
 .cursive {
   color: white;
-  font-family: "Raleway", sans-serif; }
+  font-family: 'Rock Salt', cursive; }
 
 .list {
   font-size: 2em;
