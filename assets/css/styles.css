@@ -85,6 +85,10 @@ h1 {
 .box {
   border: 2px solid rgba(0, 0, 0, 0.2); }
 
+.cursive {
+  color: white;
+  font-family: "Raleway", sans-serif; }
+
 .list {
   font-size: 2em;
   height: auto;
